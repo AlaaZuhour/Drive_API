@@ -381,7 +381,8 @@ public class DriveExample extends Activity
            fileList = new ArrayList<String>();
             folders = new ArrayList<String>();
             ids = new ArrayList<>();
-
+            folder.setVisibility(View.VISIBLE);
+            folderGrid.setVisibility(View.VISIBLE);
 
         }
 
@@ -504,7 +505,6 @@ public class DriveExample extends Activity
                 }
 
                 String current = strings.get(position);
-                Log.d("current1",current);
                 TextView file = (TextView) convertView.findViewById(R.id.textView2);
                 file.setText(current);
                 return convertView;
